@@ -3,10 +3,10 @@ import React from 'react';
 function UserProfile(props) {
     return (
         <div>
-          <h1>User Profile</h1>
+          <h1>User</h1>
 
-          <div>Username: {props.userName}</div>
-          <div>Member Since: {props.memberSince}</div>
+          <div className='userInfo'>Username: {props.userName}</div>
+          <div className='userInfo'>Member Since: {props.memberSince}</div>
         </div>
     );
   }

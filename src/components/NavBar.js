@@ -8,13 +8,13 @@ function NavBar() {
 
 
   return <Fragment>
-
-                <Link to="/" > Home </Link>
-                <Link to="/login" > Login </Link>
+            <div className='nav'>
+                <Link to="/" > Home  </Link> 
+                <Link to="/login"> Login </Link>
                 <Link to="/userprofile" > UserProfile </Link>
-                <Link to="/debits" > Debits </Link>
-                <Link to="/credits" > Credits </Link>
-
+                <Link to="/debits" > Debits </Link> 
+                <Link to="/credits" > Credits </Link> 
+          </div>
 
   </Fragment>;
 }

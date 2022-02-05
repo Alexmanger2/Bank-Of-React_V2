@@ -44,11 +44,11 @@ function Credits(props) {
 <h1>Credits</h1>
 <h2>Account Balance : {props.accountBalance}</h2>
 
-
+<div className='inputBar'>
 <input type="text" placeholder='description' onChange={e => setDescription(e.target.value)} />
 <input type="text" placeholder='amount' onChange={e => setAmount(parseInt(e.target.value))} />
 <button onClick={addDebits}>Add</button>
-
+</div>
 
 
 {

@@ -42,21 +42,23 @@ function Debits(props) {
 <h1>Debits</h1>
 <h2>Account Balance : {props.accountBalance}</h2>
 
-
+<div className='inputBar'>
 <input type="text" placeholder='description' onChange={e => setDescription(e.target.value)} />
 <input type="text" placeholder='amount' onChange={e => setAmount(parseInt(e.target.value))} />
 <button onClick={addDebits}>Add</button>
-
+</div>
 
 
 {
     debits.map(data => {
         return(
-            <ul key={data.id}>
+            <div key={data.id} className="card">
+            <ul>
                 <li><span>Description: </span> {data.description}</li>
                 <li><span>Amount: </span> {data.amount}</li>
                 <li><span>Date: </span>Date: {data.date}</li>
             </ul>
+            </div>
         )
     })
 }
